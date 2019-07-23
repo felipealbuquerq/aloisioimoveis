@@ -38,6 +38,8 @@ source .aloisioimoveis/bin/activate
 pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test
+python manage.py migrate --run-syncdb
+python manage.py runserver
 ```
 
 ## Author
